@@ -1,0 +1,52 @@
+<html>
+  <div style="text-align-last: right; padding-right: 45%">
+    <h1>Add Products Here</h1>
+
+    <label><b>Product Name</b></label
+    >&nbsp;&nbsp;&nbsp;&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="name"
+      id="name"
+      #name
+    /><br />
+    <label><b>Description</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="description"
+      id="description"
+      #description
+    /><br />
+    <label><b>Category</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="category"
+      id="category"
+      #category
+    /><br />
+    <label><b>Price</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="number"
+      name="price"
+      id="price"
+      #price
+    /><br /><br />
+    <button
+      type="button"
+      style="margin-right: 6%"
+      (click)="Add(name.value, description.value, category.value, price.value)"
+    >
+      Add
+    </button>
+    <button type="button" style="margin-right: 15px">
+      <a routerLink="/home" style="text-decoration: none; color: black">Back</a>
+    </button>
+  </div>
+</html>

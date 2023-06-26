@@ -1,0 +1,69 @@
+<html>
+  <form>
+    <div style="text-align-last: right; padding-right: 45%">
+      <h1>Update Product</h1>
+      <input
+        style="text-align-last: start"
+        type="hidden"
+        name="product_id"
+        id="product_id"
+        value="{{ data.product_id }}"
+        #product_id
+      /><br />
+      <label><b>Product Name</b></label
+      >&nbsp;&nbsp;&nbsp;&nbsp;
+      <input
+        style="text-align-last: start"
+        type="text"
+        name="name"
+        id="name"
+        #name
+        value="{{ data.title }}"
+      /><br />
+      <label><b>Description</b></label
+      >&nbsp;
+      <input
+        style="text-align-last: start"
+        type="text"
+        name="description"
+        id="description"
+        value="{{ data.description }}"
+        #description
+      /><br />
+      <label><b>Category</b></label
+      >&nbsp;
+      <input
+        style="text-align-last: start"
+        type="text"
+        name="category"
+        id="category"
+        value="{{ data.category }}"
+        #category
+      /><br />
+      <label><b>price</b></label
+      >&nbsp;
+      <input
+        style="text-align-last: start"
+        type="text"
+        name="price"
+        id="price"
+        value="{{ data.price }}"
+        #price
+      /><br /><br />
+      <button
+        type="submit"
+        style="margin-right: 6%"
+        (click)="
+          Update(product_id.value, name.value, description.value, category.value, price.value))
+        "
+      >
+        Update
+      </button>
+      <button type="button" style="margin-right: 15px">
+        <a routerLink="/home" style="text-decoration: none; color: black"
+          >Back</a
+        >
+      </button>
+    </div>
+  </form>
+</html>
